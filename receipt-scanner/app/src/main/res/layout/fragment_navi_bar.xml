@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp"
+    android:weightSum="3">
+
+    <!-- Add Receipt Button -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:text="Add Receipt" />
+
+    <!-- Receipts Button -->
+    <Button
+        android:id="@+id/receipts_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:text="Receipts" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:text="Logout" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CalorieCounter</string>
+    <string name="calories_counter">Calories Counter</string>
+    <string name="date">Date</string>
+    <string name="enter_date_mm_dd_yyyy">Enter Date MM/DD/YYYY</string>
+    <string name="meals">Meals</string>
+    <string name="_0">0</string>
+    <string name="update">Update</string>
+    <string name="water">Water</string>
+    <string name="_0_cups">0 cups</string>
+    <string name="update2">Update</string>
+    <string name="snacks">Snacks</string>
+    <string name="_0_">0</string>
+    <string name="update3">Update</string>
+    <string name="total">Total</string>
+    <string name="_0__">0</string>
+    <string name="adjust_amount">Adjust Amount</string>
+    <string name="app_image">Image description</string>
+</resources>

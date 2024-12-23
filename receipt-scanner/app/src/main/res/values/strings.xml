@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ReceiptScanner</string>
+    <string name="delete_button">Delete Receipt</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="listify_my_to_do_list">Listify: My To-Do List</string>
+    <string name="about2">About</string>
+    <string name="add2">Add</string>
+    <string name="app_image">tod_list.png\n</string>
+    <string name="listify_my_to_do_list2">Listify: My To-Do List</string>
+    <string name="task">Task</string>
+    <string name="task2">Task</string>
+    <string name="too_much_work">Too much work!</string>
+</resources>

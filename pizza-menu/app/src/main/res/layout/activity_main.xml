@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Sauces -->
+    <TextView
+        android:id="@+id/sauceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_sauce"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Replacing radio buttons group with a Spinner for sauces -->
+    <Spinner
+        android:id="@+id/sauceSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Toppings to choose from. check boxes -->
+    <TextView
+        android:id="@+id/toppingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_toppings_1_each"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_chicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken" />
+
+    <CheckBox
+        android:id="@+id/checkbox_bacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bacon" />
+
+    <CheckBox
+        android:id="@+id/checkbox_pepperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pepperoni" />
+
+    <CheckBox
+        android:id="@+id/checkbox_olives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olives" />
+
+    <CheckBox
+        android:id="@+id/checkbox_onions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onions" />
+
+
+    <!-- Total Cost Counter for extra credit -->
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_0"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+
+    <!-- Dark Mode Toggle Switch -->
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/dark_mode" />
+
+</LinearLayout>

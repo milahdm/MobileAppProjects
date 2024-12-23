@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- image -->
+
+    <!-- Title or Header in the top-middle -->
+
+    <!-- GridLayout section for Date, Meals, Water, Snacks -->
+
+    <ImageView
+        android:id="@+id/homepageimage"
+        android:layout_width="144dp"
+        android:layout_height="167dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/app_image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/caloriehomepage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_counter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homepageimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:rowCount="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <!-- Date Row -->
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/date"
+            android:textSize="20sp" />
+
+        <!-- Simple EditText for Date with hint -->
+        <EditText
+            android:id="@+id/dateEntry"
+            android:layout_width="219dp"
+            android:layout_height="48dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:inputType="date"
+            android:hint="@string/enter_date_mm_dd_yyyy" />
+
+        <!-- Meals Row -->
+        <TextView
+            android:id="@+id/mealsLabel"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/meals"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mealsCount"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/_0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/updateMealsButton"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginStart="66dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/update" />
+
+        <!-- Water Row -->
+        <TextView
+            android:id="@+id/waterLabel"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/water"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/waterCount"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/_0_cups"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/updateWaterButton"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginStart="66dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/update2" />
+
+        <!-- Snacks Row -->
+        <TextView
+            android:id="@+id/snacksLabel"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/snacks"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/snacksCount"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/_0_"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/updateSnacksButton"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginStart="66dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/update3" />
+
+        <!-- Total Row -->
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/total"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/totalCount"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/_0__"
+            android:textSize="20sp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:id="@+id/main"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:padding="16dp"-->
+    <!--    tools:context=".MainActivity">-->
+
+    <!--    &lt;!&ndash; Image at the top left &ndash;&gt;-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/homepageimage"-->
+    <!--        android:layout_width="144dp"-->
+    <!--        android:layout_height="167dp"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:contentDescription="@string/app_image"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        android:src="@drawable/caloriehomepage"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    &lt;!&ndash; Title next to the image &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/calories_counter"-->
+    <!--        android:textSize="21sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/homepageimage"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp" />-->
+
+    <!--    &lt;!&ndash; Date Row &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/dateLabel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/date"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.3"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/homepageimage"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:layout_marginTop="16dp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/dateEntry"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="@string/enter_date_mm_dd_yyyy"-->
+    <!--        app:layout_constraintWidth_percent="0.7"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/homepageimage"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/dateLabel"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginTop="16dp" />-->
+
+    <!--    &lt;!&ndash; Meals Row &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/mealsLabel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/meals"-->
+    <!--        android:textColor="@android:color/holo_green_dark"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.3"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/dateEntry"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/mealsCount"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/_0"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/dateEntry"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/mealsLabel"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/updateMealsButton"-->
+    <!--        android:layout_width="141dp"-->
+    <!--        android:layout_height="41dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="@string/update"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/mealsCount"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/dateEntry"-->
+    <!--        app:layout_constraintWidth_percent="0.5" />-->
+
+    <!--    &lt;!&ndash; Water Row &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/waterLabel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/water"-->
+    <!--        android:textColor="@android:color/holo_blue_dark"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.3"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/mealsLabel"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/waterCount"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/_0_cups"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/mealsLabel"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/waterLabel"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/updateWaterButton"-->
+    <!--        android:layout_width="141dp"-->
+    <!--        android:layout_height="41dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="@string/update"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/waterCount"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/mealsLabel"-->
+    <!--        app:layout_constraintWidth_percent="0.5" />-->
+
+    <!--    &lt;!&ndash; Snacks Row &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/snacksLabel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/snacks"-->
+    <!--        android:textColor="@android:color/holo_red_dark"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.3"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/waterLabel"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/snacksCount"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/_0_"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/waterLabel"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/snacksLabel"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/updateSnacksButton"-->
+    <!--        android:layout_width="141dp"-->
+    <!--        android:layout_height="41dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="@string/update"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/snacksCount"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/waterLabel"-->
+    <!--        app:layout_constraintWidth_percent="0.5" />-->
+
+    <!--    &lt;!&ndash; Total Row &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/totalLabel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/total"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.3"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/snacksLabel"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/totalCount"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/_0__"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintWidth_percent="0.7"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/snacksLabel"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/totalLabel"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="24dp" />-->
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

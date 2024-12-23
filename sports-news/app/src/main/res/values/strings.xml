@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SportsApplication</string>
+    <string name="news_stories1">News Stories</string>
+    <string name="news_content">news content\n</string>
+</resources>

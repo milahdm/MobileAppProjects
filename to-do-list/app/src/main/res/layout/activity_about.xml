@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Top Image -->
+        <ImageView
+            android:id="@+id/imageView_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/persia"
+            android:contentDescription="Top image" />
+
+        <!-- Developer 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Circular Image for Developer 1 -->
+            <ImageView
+                android:id="@+id/imageView_dev1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/john"
+                android:contentDescription="Developer 1"
+                android:background="@android:color/black"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:clipToOutline="true"
+                android:backgroundTint="@android:color/darker_gray"
+                android:outlineProvider="background" />
+
+            <!-- Developer 1 Title and Description -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Developer 1 Title -->
+                <TextView
+                    android:id="@+id/textView_dev1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Johnathon Entezari"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Developer 1 Description -->
+                <TextView
+                    android:id="@+id/textView_dev1_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Johnathon is a Senior studying Computer Science with a specialization in software engineering from Fishers, Indiana, for fun he likes to play basketball with his buddies and spend time with friends."
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Developer 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Circular Image for Developer 2 -->
+            <ImageView
+                android:id="@+id/imageView_dev2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/mosalah"
+                android:contentDescription="Developer 2"
+                android:background="@android:color/black"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:clipToOutline="true"
+                android:backgroundTint="@android:color/darker_gray"
+                android:outlineProvider="background" />
+
+            <!-- Developer 2 Title and Description -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Developer 2 Title -->
+                <TextView
+                    android:id="@+id/textView_dev2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milahd Mansoori"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Developer 2 Description -->
+                <TextView
+                    android:id="@+id/textView_dev2_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milahd is a Senior studying Computer Science with a specialization in software engineering from Zionsville, Indiana, for fun he likes to hanging out with his friends and watching sports."
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

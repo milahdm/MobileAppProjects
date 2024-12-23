@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PizzaActivity</string>
+    <string name="select_your_sauce">Select your Sauce:</string>
+    <string name="tomato_basil_sauce_12">Tomato Basil Sauce $12</string>
+    <string name="marinara_sauce_10">Marinara Sauce $10</string>
+    <string name="barbecue_sauce_15">Barbecue Sauce $15</string>
+    <string name="select_your_toppings_1_each">Select your Toppings ($1 each):</string>
+    <string name="chicken">Chicken</string>
+    <string name="bacon">Bacon</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="olives">Olives</string>
+    <string name="onions">Onions</string>
+    <string name="total_0">Total: $0</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>

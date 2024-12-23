@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light mode colors -->
+    <color name="primaryColor">#FF5722</color>
+    <color name="primaryDarkColor">#E64A19</color>
+    <color name="accentColor">#FFAB40</color>
+    <color name="textColor">#000000</color>
+    <color name="windowBackground">#FFFFFF</color>
+
+    <!-- Dark mode colors -->
+    <color name="backgroundColorDark">#000000</color>
+    <color name="textColorDark">#FFFFFF</color>
+    <color name="primaryRedBright">#FB2626</color>
+    <color name="checkboxDark">#FFFFFF</color>
+</resources>
